@@ -1,6 +1,6 @@
 import { useState } from "react"
 
-export default function Post({title, body}): React.JSX.Element {
+export default function Post({title, body}:  { title: string; body: string }): React.JSX.Element {
     const [isOpen, setOpen] = useState<boolean>(false)
     
     return (
